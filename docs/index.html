@@ -111,8 +111,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
  </script>
       
+<br>
+      <button id="zjy-test-click">zjy-test-click button!</button>
 
-
+ <script>
+    document.getElementById("zjy-test-click").addEventListener("click", function () {
+      gtag("event", "zjy_test", {
+        currency: "CAD",
+        value: 0.1,
+      });   
+    });
+ </script>
   
 </body>
 
